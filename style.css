@@ -1,0 +1,213 @@
+
+body {
+    background-color: #110005;
+}
+
+.mainBox{
+    padding: 1% 1% 1% 1%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Gametitle{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 20px;
+    border-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    width: 95%;
+    height: 95%
+}
+
+ul.menu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*background-color: #fea984;*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul.menu li button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.6em;
+    color: white;
+    width: 10em;
+    height: 1.5em;
+    background-color: #60130b;
+    border: 0.1em solid rgb(255,255,255);
+    border-radius: 00.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+ul.menu li button:hover{
+    background-color: tomato;
+}
+
+ul.menu li button:active{
+    color: whitesmoke;
+    background: black;
+}
+
+.game div{
+    border-style: solid;
+    border-width: 3px;
+    border-color: whitesmoke; 
+    font-size: 40px;
+    /*background-color: white;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 70%;
+}
+
+.game{
+
+    padding-top: 2%;
+}
+
+
+/*These need to exist to actually have the menus toggle*/
+#game .screen {
+    width: 96%;
+    height: 40%;
+    display: none;
+}
+
+#game .screen.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.game .keybind{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%
+
+}
+
+.game .options-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    border-style: none;
+}
+
+.game .options-menu div{
+    margin: 2%;
+    align-self: center;
+    padding: 1% 1% 1% 1%;
+}
+
+.game.options-menu h1{
+    justify-content: center;
+}
+
+.game .high-scores-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    border-style: none;
+
+}
+
+.game .options-menu button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.6em;
+    color: white;
+    /*width: 10em;
+    height: 1.5em;*/
+    background-color: #60130b;
+    border: 0.1em solid rgb(255,255,255);
+    border-radius: 00.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+.game .options-menu button:hover{
+    background-color: tomato;
+}
+
+.game .high-scores-menu div{
+    color: whitesmoke;
+    margin: 2%;
+    align-self: center;
+    padding: 1% 1% 1% 1%;
+}
+
+.game .high-scores-menu button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.6em;
+    color: white;
+    /*width: 10em;
+    height: 1.5em;*/
+    background-color: #60130b;
+    border: 0.1em solid rgb(255,255,255);
+    border-radius: 00.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+.game .high-scores-menu button:hover{
+    background-color: tomato;
+}
+
+.game .credits{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    border-style: none;
+}
+
+.game .credits div{
+    color: whitesmoke;
+    margin: 2%;
+    align-self: center;
+    padding: 1% 1% 1% 1%;
+}
+.game .credits button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.6em;
+    color: white;
+    /*width: 10em;
+    height: 1.5em;*/
+    background-color: #60130b;
+    border: 0.1em solid rgb(255,255,255);
+    border-radius: 00.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+.game .credits button:hover{
+    background-color: tomato;
+}

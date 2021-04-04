@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Javascript Mars Lander</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="mainBox">
+    <div id="Gametitle" class="Gametitle">
+
+        <h1> Perseverance Lander Game</h1>
+
+    </div>
+
+
+    <div id="game" class="game">
+
+        <div id="main-menu" class="screen">
+            <ul class="menu">
+                <li><button id="new-game-button"> New Game </button></li>
+                <li><button id="high-scores-button">High Scores</button></li>
+                <li><button id="options-screen-button"> Options </button></li>
+                <li><button id="credits-button">Credits</button></li>
+            </ul>
+        </div>
+
+        <div id="game-play" class="screen">
+            <canvas id="canvas" width="1000" height="1000"></canvas>
+        </div>
+
+        <div id="high-scores" class="screen">
+            <div class="high-scores-menu">
+                <h1> High Scores</h1>
+                <div id="scores-area">
+                <pre>          Name                      Score            </pre>
+                <pre>-----------------------------------------------------</pre>
+
+                </div>
+                <button id="high-scores-back-button">Back</button>
+            </div>
+        </div>
+
+        <div id="options" class="screen">
+
+            <div class="options-menu">
+            <h1> Keybindings </h1>
+
+            <div class="keybind"> Thrust  <key id='thrust-key'>w</key> <button id='thrust-rebind'> Rebind </button> </div>
+
+            <div class="keybind"> Rotate Right <key id='right-key'>d</key> <button id='right-rebind'> Rebind</button></div>
+
+            <div class="keybind"> Rotate Left <key id='left-key'>a</key> <button id='left-rebind'> Rebind</button></div>
+
+
+            <button id="options-back-button">Back</button>
+            </div>
+        </div>
+
+        <div id="credits" class="screen">
+            <div class="credits">
+                Credits<br>
+
+                Code by: Andrew Knoblach<br>
+                March 2021<br><br>
+
+                Sound effects: Freesound.org<br>
+                Images: duckduckgo.com<br>
+            <button id="credits-back-button">Back</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Inclusion of all scripts starts here-->
+<script src="scripts/creditsMenu.js"></script>
+<script src="scripts/highscoresMenu.js"></script>
+<script src="scripts/mainMenu.js"></script>
+<script src="scripts/optionsMenu.js"></script>
+<script src="scripts/gameScreen.js"></script>
+<script src="scripts/menus.js"></script>
+<script src="scripts/lander.js"></script>
+<script src="scripts/terrain.js"></script>
+<script src="scripts/persist.js"></script>
+
+<script src="scripts/Input.js"></script>
+<script src="scripts/renderer.js"></script>
+<script src="scripts/game.js"></script>
+<script src="scripts/gameDriver.js"></script>
+
+</body>
+
+</html>
